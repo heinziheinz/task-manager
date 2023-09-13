@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e176f639-8674-48cb-b76b-664eee869de1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CreateInputs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/CreateInputsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTimeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTimeMockImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/CreateInputsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/CreateInputsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +24,9 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,10 +46,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "crazy-outing",
     "last_opened_file_path": "/Users/johnnyrobot/Documents/code-cool-oop/pa-preperation/taskmanager",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,8 +67,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateInputsTest.getAllNotCompletedTask (1)">
+  <component name="RunManager" selected="JUnit.CreateInputsTest.getAllNotCompletedTask (2)">
     <configuration name="CreateInputsTest.getAllNotCompletedTask (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanager" />
       <extension name="coverage">
@@ -88,6 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateInputsTest.getAllNotCompletedTask (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskmanager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.CreateInputsTest" />
+      <option name="METHOD_NAME" value="getAllNotCompletedTask(service.User,java.lang.String,java.lang.String,java.time.LocalDateTime,model.Status,boolean)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateInputsTest.getAllNotCompletedTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanager" />
       <extension name="coverage">
@@ -99,22 +115,6 @@
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.CreateInputsTest" />
       <option name="METHOD_NAME" value="getAllNotCompletedTask(service.CreateInputs,java.lang.String,java.lang.String,java.time.LocalDateTime,model.Status)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateInputsTest.getAppointmentsAndTasks (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taskmanager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.CreateInputsTest" />
-      <option name="METHOD_NAME" value="getAppointmentsAndTasks(service.CreateInputs,java.time.LocalDateTime,java.time.LocalDateTime)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask (2)" />
         <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask (1)" />
         <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask" />
         <item itemvalue="JUnit.CreateInputsTest.getAppointmentsAndTasks (2)" />
         <item itemvalue="JUnit.CreateInputsTest.getAppointmentsAndTasks (3)" />
-        <item itemvalue="JUnit.CreateInputsTest.getAppointmentsAndTasks (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694590597209</updated>
       <workItem from="1694590599060" duration="17944000" />
-      <workItem from="1694622753947" duration="88000" />
+      <workItem from="1694622753947" duration="3135000" />
     </task>
     <servers />
   </component>

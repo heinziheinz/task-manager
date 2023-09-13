@@ -1,8 +1,9 @@
 package service;
 
+import model.CurrentTimeImpl;
+import model.CurrentTimeMockImpl;
 import model.Status;
 import model.Task;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -126,15 +127,16 @@ class CreateInputsTest {
     public static Stream<Arguments> parametersTwo() {
         return Stream.of(
                 // Sprint #1
-                of(new CreateInputs(),  "putzen", "genau",LocalDateTime.of(2023, 9, 13, 16, 30, 45), Status.COMPLETED, true),
-                of(new CreateInputs(),  "putzen", "genau",LocalDateTime.of(2023, 8, 13, 16, 30, 45), Status.PENDING, false)
+                of(new User("Frank", "Dentist", new CurrentTimeMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 9, 13, 16, 30, 45), Status.COMPLETED, true),
+                of(new User("Jack", "Oncologist",new CurrentTimeMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 8, 13, 16, 30, 45), Status.PENDING, false)
 
         );
     }
 
     @ParameterizedTest
     @MethodSource("parametersTwo")
-    public void getAllNotCompletedTask( CreateInputs createInputs,String title,String description, LocalDateTime date, Status taskCompleted, boolean isNotEmpty ){
+    public void getAllNotCompletedTask( User createInputs,String title,String description, LocalDateTime date, Status taskCompleted, boolean isNotEmpty ){
+
         boolean expected2 = createInputs.setTask(title,description, date, taskCompleted);
 
         List<Task> allNotCompletedTasks = createInputs.getAllNotCompletedTask();
