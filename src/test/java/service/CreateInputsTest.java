@@ -1,12 +1,12 @@
 package service;
 
-import model.CurrentTimeImpl;
-import model.CurrentTimeMockImpl;
 import model.Status;
 import model.Task;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import service.input.CreateInputs;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,19 +17,18 @@ import static org.junit.jupiter.params.provider.Arguments.of;
 
 class CreateInputsTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void setAppointments() {
-
-
         CreateInputs createInputs = new CreateInputs();
         LocalDateTime startDate = LocalDateTime.of(2024, 9, 13, 10, 49, 45);
-
         LocalDateTime endDate = LocalDateTime.of(2024, 9, 13, 16, 30, 45);
+        
         boolean expected = createInputs.setAppointments("Dentist", "It`s due man",startDate, endDate  );
+        
         assertTrue(expected);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void checkIfDateIsAtTheSameTime() {
         CreateInputs createInputs = new CreateInputs();
         LocalDateTime startDate = LocalDateTime.of(2024, 9, 13, 10, 49, 45);
@@ -116,6 +115,8 @@ class CreateInputsTest {
         List<Object> tasksAndAppointments =  createInputs.getAllTasksAndAppointmentsOfMonth();
         System.out.println("tasksAndAppointments = " + tasksAndAppointments);
 
+        assertEquals(expectZeroOrGreater, expected);
+        assertEquals(expectZeroOrGreater, expected2);
         if (expectZeroOrGreater) {
             assertTrue(!tasksAndAppointments.isEmpty());
         } else {
@@ -127,15 +128,15 @@ class CreateInputsTest {
     public static Stream<Arguments> parametersTwo() {
         return Stream.of(
                 // Sprint #1
-                of(new User("Frank", "Dentist", new CurrentTimeMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 9, 13, 16, 30, 45), Status.COMPLETED, true),
-                of(new User("Jack", "Oncologist",new CurrentTimeMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 8, 13, 16, 30, 45), Status.PENDING, false)
+                of(new AppointmentService("Frank", "Dentist", new TimeServiceMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 9, 13, 16, 30, 45), Status.COMPLETED, true),
+                of(new AppointmentService("Jack", "Oncologist",new TimeServiceMockImpl(2023, 9, 13, 14, 30, 0)),  "putzen", "genau",LocalDateTime.of(2023, 8, 13, 16, 30, 45), Status.PENDING, false)
 
         );
     }
 
     @ParameterizedTest
     @MethodSource("parametersTwo")
-    public void getAllNotCompletedTask( User createInputs,String title,String description, LocalDateTime date, Status taskCompleted, boolean isNotEmpty ){
+    public void getAllNotCompletedTask(AppointmentService createInputs, String title, String description, LocalDateTime date, Status taskCompleted, boolean isNotEmpty ){
 
         boolean expected2 = createInputs.setTask(title,description, date, taskCompleted);
 
