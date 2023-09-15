@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e176f639-8674-48cb-b76b-664eee869de1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTimeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/CurrentTimeMockImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/CreateInputsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/CreateInputsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,24 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "crazy-outing",
-    "last_opened_file_path": "/Users/johnnyrobot/Documents/code-cool-oop/pa-preperation/taskmanager",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;crazy-outing&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/johnnyrobot/Documents/code-cool-oop/pa-preperation/taskmanager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -171,7 +164,12 @@
       <option name="presentableId" value="Default" />
       <updated>1694590597209</updated>
       <workItem from="1694590599060" duration="17944000" />
-      <workItem from="1694622753947" duration="3135000" />
+      <workItem from="1694622753947" duration="3313000" />
+      <workItem from="1694626412883" duration="72000" />
+      <workItem from="1694626537111" duration="201000" />
+      <workItem from="1694673576103" duration="97000" />
+      <workItem from="1694674350804" duration="2313000" />
+      <workItem from="1694701975496" duration="185000" />
     </task>
     <servers />
   </component>
