@@ -1,36 +1,32 @@
 package service;
 
 import model.Appointment;
+import model.CurrentTime;
 import model.Status;
 import model.Task;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Set;
 
-public final class CreateInputs {
+public final class TaskServiceManager {
     private final ArrayList<Appointment> appointments;
     private final ArrayList<Task> tasks;
 
-    public CreateInputs() {
+    public TaskServiceManager() {
         this.appointments = new ArrayList<>();
         this.tasks = new ArrayList<>();
     }
 
-    public boolean setAppointments( String title, String description, LocalDateTime startDate, LocalDateTime endDate){
+    public boolean setAppointments(String title, String description, LocalDateTime startDate, LocalDateTime endDate, Set<Appointment> appointmentList){
         // only if date is not in the past and not at the same time as another Appointment
         LocalDateTime currentDateTime  = getCurrentTime();
         boolean notAtSameTime = checkIfDateIsAtTheSameTime(startDate, endDate);
-        System.out.println("notAtSameTime = " + notAtSameTime);
-        System.out.println("startDate.isBefore(currentDateTime) = " + startDate.isBefore(currentDateTime));
-
         if (startDate.isBefore(currentDateTime)  && !notAtSameTime) {
-            System.out.println("startDate is in the past.");
             return false;
         } else {
-            appointments.add(new Appointment(title, description, startDate, endDate));
+            appointmentList.add(new Appointment(title, description, startDate, endDate));
             return true;
         }
 
