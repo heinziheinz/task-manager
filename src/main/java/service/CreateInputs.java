@@ -54,6 +54,7 @@ public final class CreateInputs {
                  .filter(task -> task.date().getMonthValue() == currentMonth && task.date().getYear() == currentYear).toList();
 
         // Combine the two lists into a single List<Object>
+        //interface eingentlich
         List<Object> combinedList = new ArrayList<>();
         combinedList.addAll(apointemntList);
         combinedList.addAll(taskList);

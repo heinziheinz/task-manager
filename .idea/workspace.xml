@@ -7,6 +7,7 @@
     <list default="true" id="e176f639-8674-48cb-b76b-664eee869de1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CreateInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CreateInputs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,22 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateInputsTest.getAllNotCompletedTask (2)">
+  <component name="RunManager" selected="JUnit.CreateInputsTest">
+    <configuration name="CreateInputsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taskmanager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.CreateInputsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateInputsTest.getAllNotCompletedTask (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taskmanager" />
       <extension name="coverage">
@@ -130,29 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateInputsTest.getAppointmentsAndTasks (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taskmanager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.CreateInputsTest" />
-      <option name="METHOD_NAME" value="getAppointmentsAndTasks(service.CreateInputs,java.time.LocalDateTime,java.time.LocalDateTime,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateInputsTest" />
         <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask (2)" />
         <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask (1)" />
         <item itemvalue="JUnit.CreateInputsTest.getAllNotCompletedTask" />
         <item itemvalue="JUnit.CreateInputsTest.getAppointmentsAndTasks (2)" />
-        <item itemvalue="JUnit.CreateInputsTest.getAppointmentsAndTasks (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +172,16 @@
       <workItem from="1694674350804" duration="2313000" />
       <workItem from="1694701975496" duration="185000" />
       <workItem from="1694761050462" duration="269000" />
-      <workItem from="1694765980767" duration="506000" />
+      <workItem from="1694765980767" duration="759000" />
+      <workItem from="1695280611755" duration="1655000" />
+      <workItem from="1695296808697" duration="748000" />
+      <workItem from="1695373843301" duration="243000" />
+      <workItem from="1695383384551" duration="1882000" />
+      <workItem from="1695472960177" duration="849000" />
+      <workItem from="1695474408663" duration="468000" />
+      <workItem from="1695475618829" duration="870000" />
+      <workItem from="1695480659737" duration="75000" />
+      <workItem from="1695544377445" duration="79000" />
     </task>
     <servers />
   </component>
